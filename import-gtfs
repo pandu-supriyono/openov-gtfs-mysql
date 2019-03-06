@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 
-# Verwijder eventuele oude versie van gtfs-openov-nl.zip indien die er is
-rm -rf gtfs-openov-nl.zip
+# Verwijder eventuele oude versie van gtfs-nl.zip indien die er is
+rm -rf gtfs-nl.zip
 
-# Download de meest recente versie van de dienstregelingen van OpenOV.nl
-wget http://gtfs.openov.nl/gtfs/gtfs-openov-nl.zip
+# Download de meest recente versie van de dienstregelingen van ovapi.nl
+wget http://gtfs.ovapi.nl/nl/gtfs-nl.zip
 
 # Deze map bestaat als het goed is al, maar voor de zekerheid maken we hem toch
 # nog een keer aan.
 mkdir -p gtfs
 
 # Pak het bestand gtfs-openov-nl.zip uit naar de map gtfs
-unzip gtfs-openov-nl.zip -d gtfs
+unzip gtfs-nl.zip -d gtfs
 
 # Maak de tabellen aan waarin de data terecht moeten komen
 mysql < create-tables.sql
