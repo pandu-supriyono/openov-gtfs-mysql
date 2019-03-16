@@ -14,7 +14,7 @@ Oh ja, mocht je helemaal niet bekend zijn met GTFS, dan kun je het beste een kij
 Clone deze repository:
 
 ```bash
-git clone https://github.com/overstapp/openov-gtfs-mysql
+git clone https://github.com/pandu-supriyono/openov-gtfs-mysql
 ```
 
 Zorg ervoor dat je een MySQL-server hebt draaien.
